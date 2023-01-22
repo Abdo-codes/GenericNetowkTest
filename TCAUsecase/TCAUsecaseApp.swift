@@ -1,9 +1,4 @@
-//
-//  TCAUsecaseApp.swift
-//  TCAUsecase
-//
-//  Created by abdoelrahman.eaita on 22/01/2023.
-//
+
 
 import SwiftUI
 
@@ -11,7 +6,7 @@ import SwiftUI
 struct TCAUsecaseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: .init(initialState: .init(), reducer: ListFeature()))
         }
     }
 }
